@@ -1,5 +1,11 @@
 package br.com.paulo.SpringSec.models.repo;
 
-public class UserRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import br.com.paulo.SpringSec.models.model.User;
+
+public interface UserRepo extends JpaRepository<User, Integer>{
+
+	
+	
 }
